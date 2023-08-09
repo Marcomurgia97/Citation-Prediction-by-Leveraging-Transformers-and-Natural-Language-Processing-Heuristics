@@ -1,0 +1,133 @@
+Prior studies [1] found that direct optimization of evaluation measures substantially contributes to performance improvement of ranking problems.
+Typically, for NLP tasks like text classification, previous works [1] reformulate them into text-to-text generation formats and prompt the LLMs of natural language (NL-LLMs) like GPT-3 to generate the answer.
+GAIN adapts the representations of gazetteer networks to integrate external entity type information into models [1].
+To address these issues, we turn to agentbased models as tools to examine various factors shaping language evolution in simplified and idealised simulations [1].
+While the receiver’s inference is undoubtedly important for context-dependent communication.
+The personality theory from cognitive psychology has provided an opportunity to model the partners more clearly and concretely [1].
+ToM [1] is a fundamental concept in cognitive psychology, and it allows individuals to predict and explain others’ behaviors.
+This knowledge should support an agent in understanding the context of a situation and inferring the necessary steps to fulfill a certain task.
+Actually, Transformer-based models have the ability to automatically learn the mapping between the entity properties and entity types on the basis of input sentence [1].
+Recent years have witnessed spectacular developments in video action recognition [1].
+The early work CMN [1] achieves this objective using a memory network to store matrix representations of videos.
+LIBVISO2 [1] is a known implementation of the traditional pipeline for the monocular and stereo cases.
+We also find additional evidence to support that the ease of optimization resulting from training on synthetic targets does not completely explain its superior performance [1].
+Typically, forward translation is not as effective as back translation since the errors of the model are further propagated in the data in the former case [1].
+We acknowledge that there is currently no consensus on a standard assessment of code-text dataset quality benchmarks [1].
+The Stack [1] is, to the best of our knowledge, the largest publicly available dataset of multilingual source code with permissive licenses to date.
+CLIP [1] is a state of the art vision-language model that was originally developed by OpenAI. It’s original pretraining task was to match a caption with an image.
+Moreover, unlike relational databases, the schema of an entity is not static but dynamically instantiated.
+However, such methods are prone to errors due to the limited semantic information and field-of-view obstacles, such as window blinds [1].
+In collaborative tasks, effective communication is crucial for achieving joint goals [1].
+These extractions are included as additional input that informs the final summarization step through prompt chaining.
+Acknowledging the challenges in automatic evaluations of summarization [1], we focus on quantitatively evaluating the correctness/faithfulness of capturing medical concepts and their affirmation status.
+Another approach involves the use of rule-based systems [1], where predefined rules are used to classify documents based on their content and metadata.
+We start by the extraction of text from the documents using the open-source PDFMiner API [1].
+Following the previous DNN model watermarking methods [1], we mainly study the robustness of the proposed watermark against removal attacks under pruning and fine-tuning.
+The leading data-driven method to intermediate error classification relies on a tree embedding method [1].
+Here we utilize multilingual sentencetransformers [1] to extract the sentence embedding of the test input.
+In this work, we build on the framework of synthetic data generation using DP large language models (LLMs) [1] to develop an approach for private text data sharing for training any downstream recommender system with query-level privacy.
+Training recommender systems in a federated fashion is another approach towards privacy preservation [1].
+Deep retrieval systems [1], also known as dense retrieval systems, have emerged as effective components for retrieval in modern recommender systems.
+Hard negative examples can be challenging to obtain since they require additional mining from the large set of candidate documents [1].
+Recently, physiological and physical features were also shown to be effective, such as electroencephalogram and the electrodermal activity phasic component [1].
+Instead, we focus on representing individual opinions, also knows as ‘perspectives’.
+To contrast, weak perspectivist approaches may consider several annotator viewpoints, but still reduce these viewpoints towards a single label [1].
+Specifically, textual modality descriptions are not obtained from image caption or attribute learning, since captions generally are not related to sentiments [1].
+The key aspect of this reuse problem is how to handle the semantic heterogeneity which arise any time there is the need to perform data integration across multiple sources [1].
+It is natural to begin examining non-linear models after establishing the linear methods but there is also a practical need for such models as the data may contain complicated functional relations and interactions that may exhibit non-linear patterns [1].
+Edge computing has been introduced to tackle these challenges efficiently [1].
+TEXTure [1] employs a denoising process on rendered images by utilizing a pre-trained depth-conditioned diffusion model.
+Intra-modal inconsistency and incongruity within the text or image can also serve as indicators of misinformation [1].
+The weight matrix of the fully connected layer and the convolutional layers is initialized by orthogonal initialization with bias set as zero.
+We employ the clipped double Q-learning method [1] for the critic.
+An object can be defined as a contiguous group of pixels that move together.
+The rapid rise of large-scale multitask frameworks and models provides foundations for integrating capabilities that unify many disparate tasks under one model [1].
+Neurons for multimodal integration have been found in both multisensory convergence zones and unimodal regions in the human brain [1].
+E.g., the loss for each task in the data mixture can be used to affect different sampling behavior depending on the loss value.
+Radiological examinations in dentistry assist specialists by displaying the structure of the dental bones to screen embedded teeth, bone abnormalities, cysts, tumors, infections, and fractures [1].
+However, they rely heavily on a pre-defined preoperative plan to position the end-effector, thereby failing to consider larger intraoperative changes to the surgical plans.
+However, previous work mainly focuses on planning for the abstract goals of stereotypical activities [1].
+The largest fact extraction and verification dataset FEVER [1] constructs pairs of factual snippets and paragraphs from Wikipedia articles which serve as evidence for those factual snippets.
+Although widely used in the industry, the pipeline planning method requires substantial computational resources and numerous manual heuristic functions [1].
+A-star algorithm [1] is another famous algorithm inroad-level navigation tasks, it leverages the advantages of the heuristic function to streamline research space.
+From a static topology perspective, researchers have demonstrated that the mammalian cortical (including the human brain) is a complex network whose topological properties are neither random nor regular, but somewhere in between, with small-world properties of dense local clustering and short path length [1].
+Digital signature schemes have been used as primitives in cryptographic protocols that provide entity authentication and authenticated key transport [1].
+Analogical reasoning [1] aims to identify a relational structure between two domains.
+Our goal is to build a model for this scenario that generalizes to all groups by providing comparable classification accuracies—a key objective of deploying robust and fair machine learning practices [1].
+Back propagation [1] (that is gradient descent) is used to determine the correct weights that minimize the overall cost in the neural network.
+Hierarchical information has been used to achieve more reasonable classification errors or integrated into neural networks [1].
+Examples in this field are answering questions grounded on visual images, image captioning, visual commonsense and visual reasoning with natural language [1].
+In the works on visual-semantic embeddings [1], the idea is to map the input feature space to a semantic embedding space, for instance by projecting the images and the knowledge graph into a unified representation.
+Heuristics like data augmentation [1] are also shown to be effective.
+Following recent work [1], we convert the user examples into LLM prompts that are structured as Pythonic code.
+A robust framework for agent simulation has been developed, the ring model [1], which defines utility functions for SVO traits that are now standard in multi-agent research.
+The “wounded pride” model of integral emotion [1] suggests that agents may react to unfair outcomes by feeling negative emotions, and acting spitefully.
+To evaluate Svoie, we conducted simulation experiments using a variant of the Colored Trails game [1], a resource-sharing task environment designed for studying social decision-making.
+The prior cost is inspired according to the Minimum Description Length (MDL) principle [1], which favors lexicons with fewer, shorter subwords.
+We build the Python code execution dataset based on submissions to competitive programming problems from CodeNet benchmark [1].
+Meeting summarization [1] is the task of distilling the meeting transcript into a concise and readable summary that contains the most salient parts of a meeting.
+Given that events are complex, an event may have different causes under different contexts [1].
+ALIGN has discussed many filtering tricks for selecting the training data [1].
+In spirit, our work is partially motivated by Chinchilla [1], a classic work in large language modeling.
+In particular, we employ Scallop [1] as our reasoning engine.
+For example in CLUTRR [1], we have 20 kinship relations including mother, son, uncle, fatherin-law, etc.
+For ablation study, we manually crafted 92 kinship composition rules as an external symbolic knowledge base.
+We isolate the trained relation extractor and found that it reaches 84.69% accuracy on the single relation classification task.
+For comparison, we train a relation extractor using all the intermediate labels in the training dataset, and it reaches 85.32% accuracy.
+We hope our work can lay the groundwork for exploring neuro-symbolic programming techniques.
+Figure 6 shows an overview of our proposed framework for hardware acceleration of explainable machine learning.
+The computation of integrated gradient is straightforward using Equation 7. However, in actual application, the output function F is usually too complicated to have an analytically solvable integral.
+As shown in our pilot study, when we train a model on instances of short contexts , embeddings at the front positions can be updated much more times than those at rear positions.
+Therefore, we should preserve the question tokens and the context tokens as contiguous sequences.
+Specially, during fine-tuning, we propose to move a random number of padding tokens to the front of the input sequence, as shown in Figure 2.
+We do not move padding tokens during inference, and just feed the original input sequence to the trained model.
+We first look at whether Random Padding [1] can help models to obtain better embeddings of rear positions, when there do not exist long contexts in the training set.
+We also wonder how Random Padding [1] improves QA models.
+If the prediction of baseline model obtains a lower F1 score than improved model, we will compare the two predictions.
+Throughout this work, we will make minimal assumptions about the underlying data distribution, the parameterization of the predictor, and the (finite) dimension of the data.
+This is partly a matter of convenience, but partly due to the assumption that the written form of language is the canonical one while the audio modality is just a weird, cumbersome encoding of it.
+Here I outline why these assumptions contradicting the scientific view are not only incorrect but also detrimental to progress on understanding and processing real human language.
+Both types of research would do well to consider the whole of human language as their purview.
+A light salience validation process was performed where the boolean salience property for each annotation was double-checked for consistency with our definition of salience.
+We borrow from this focal loss function and customize it such that our loss function emphasizes performance on salient traffic lights.
+Similarly, Figure 5 also shows a clear separation and concavity for the model trained with salience-sensitive loss.
+In autonomous vehicle planning, it is not always the nearest or largest objects which provide the most critical information [1].
+With each of the nine object categories, we create a training dataset of multiple objects with diverse geometries by performing the following procedures.
+The path is generated by connecting themorigin and an endpoint on the road by cubic splines, in the ego vehicle’s coordinate system.
+In these cases, we use decrease in model accuracy when exposed to biased contexts to measure systematic unfaithfulness.
+We consider an explanation not to support the predicted answer if it suggests a different answer from the final prediction or if it does not indicate any answer choice.
+The Bias Benchmark for QA (BBQ [1]) is a benchmark that tests for stereotype bias in question-answering models.
+There does not need to be an objectively correct answer to a question in order to say that two explanations are inconsistent.
+We manually annotate 96 examples (six from each model/few-shot/prompting/weak evidence combination) of unfaithful explanations for stereotypealigned predictions.
+In our sample, 86% of the explanations that lead to stereotype-aligned predictions also explicitly support those predictions.
+The remaining 14% of the explanations do not support the predicted answer because of a missing step (9%) or because the explanation suggests a different answer than what is predicted (5%).
+In the case of weakly biased predictions, models handle ambiguity inconsistently by weighing evidence more strongly if it aligns with stereotypical behavior.
+It is unlikely that faithfulness will automatically improve without targeted efforts.
+Our evaluation setup of testing for explanationconsistency in the presence of biasing features allows us to identify failures, but not prove explanations are faithful.
+This suggests that similar outcomes will be observed for other biasing features and models. In light of these results, we advocate for targeted efforts to measure and improve faithfulness.
+The models were trained for 100 epochs and we saved the models which perform best in validation set.
+We use the performance of the model on the test set as the outcome.
+We select classification accuracy as the metric.
+We calculate the mean accuracy and standard deviation after five iterations of the experiment.
+The removal of heterogeneous information reduces the result by 2.64%. Heterogeneous information often contains a lot of semantic information, which is helpful for program understanding.
+Removing direction caused a drop of 2.38% on the result. The direction of the graph can help enhance the model and get structural information by indicating whether the nodes connected by hyperedges are parent nodes or child nodes.
+The concatenated semantic and syntactic representations are then used for speculation detection.
+Strong low resource performance opens the possibility of future work building mixedinitiative systems around novel settings which would require subjective data annotation.
+As discussed in Section 7, prompting is a great option if there is already a pre-existing policy planner.
+Emotional support conversations are highly personal, as circumstances vary across individuals [1].
+It is possible that we do not use an “optimal” set of prompts as we did not mine prompts or perform soft prompting. However, prompt optimality itself is a problem in dialogue generation, because open-ended dialogue evaluation is a difficult task.
+Instead, we advise the use of mixed-initiative dialogue systems in a supportive manner, e.g., to assist trained counselors who have the emotional intelligence to recognize what content may be hurtful.
+We hypothesize that the degree sequence of a graph is highly correlated to the graph structure. Since the node degrees explicitly guide the generation of a graph, other graph statistics are also improved.
+We have presented a simple framework of skill transfer learning for robotic ultrasound-guidance procedures.
+Fig 2 shows the time series from one experienced clinician and one non-clinician while looking for an optimal scanning plane of the four-chamber view.
+Additionally, low-pass filtering neglects the high-frequency components in data, which leads to information loss and inferior performance.
+Digital signature has the following functions: data integrity and data origin identification.
+Data integrity means that signed data cannot be changed by unauthorized means.
+However, the above-mentioned property protection systems all use watermarks as ownership certificates, and the verification process leaks the certificates, and the security cannot be proved.
+The identity of the verifier varies depending on the scenario such as courts, inspectorates, notary offices, or users who want to confirm whether the service provider is the legitimate owner of the model, etc.
+The mathematics involved is significantly deeper than in the finite case and in some cases the finite case provides no guidance on how to proceed.
+We show that the value functions and the optimal value function are preserved for both stochastic and deterministic policies, as in the finite case.
+Each agent has access to several actions, which may or may not be available at any given timestep – the environment exposes a method to get currently available actions for each agent.
+However, it was observed that for the 3 classes in which the model didn’t perform as great as others for eithertheprecision or recall.
+In this section we review previous work on rotation synchronization, by considering separately methods based on explicit/analytical models and learned/neural ones.
+Table I shows that our approach exhibits good performances, with an angular error lower than two degrees in almost all of the scenes, thus showing the viability of deep matrix factorization for rotation synchronization.
