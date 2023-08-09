@@ -17,6 +17,19 @@ To replicate the experiments it's necessary to install anaconda prompt and have 
 
 ## Installing
 Steps are the following:
+
+Clone the repo:
 ```
-Give the example
+git clone https://github.com/Marcomurgia97/Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics.git
 ```
+
+move into the repo:
+```
+cd Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics
+```
+Open the anaconda prompt and create the virtual environment:
+```
+virtualenv venv
+```
+then:
+venv\Scripts\activate
