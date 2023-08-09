@@ -1,6 +1,6 @@
 # Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics
 
-This repo contains code for automating the citation prediction problem using transformers and related experiments for performance evaluation.
+This repo contains code for automating the citation prediction problem using transformers and related experiments for performances evaluation.
 
 ## Prerequisites
 You can download the models we use and fine-tuned from the following links
