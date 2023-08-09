@@ -5,9 +5,9 @@ This repo contains code for automating the citation prediction problem using tra
 ## Prerequisites
 You can download the models we use and fine-tuned from the following links
 
-gpt2: https://drive.google.com/file/d/1rwYv-hbjLwicLhi3Os4-TQUu5dOaLIdX/view?usp=drive_link
+GPT2: https://drive.google.com/file/d/1rwYv-hbjLwicLhi3Os4-TQUu5dOaLIdX/view?usp=drive_link
 
-bert: https://drive.google.com/file/d/1aXrQ3vTegDDC4TCkI1iykk4LOykg7QLl/view?usp=drive_link
+BERT: https://drive.google.com/file/d/1aXrQ3vTegDDC4TCkI1iykk4LOykg7QLl/view?usp=drive_link
 
 The experiments were carried out on windows 11, using python 3.9.13 (anaconda prompt)
 
@@ -101,4 +101,6 @@ or for the NER approach:
 python evaluation.py "..\NER\predictionNER.txt" or "..\NER\predictionNERHeur.txt"
 
 ```
+
+For any problem or tips feel free to contact us on this mail address: m.murgia98@studenti.unica.it
 
