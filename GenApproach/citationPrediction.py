@@ -411,7 +411,6 @@ for line in sentences.readlines():
                     subString = subString + ' '
                     toDel = subString
                     if '[cit]' in subString:
-                        # print(array, "ciao", startIndex, endIndex)
                         indexProbChunck = []
 
                         test = [e for e in array if startIndex < e <= endIndex]
