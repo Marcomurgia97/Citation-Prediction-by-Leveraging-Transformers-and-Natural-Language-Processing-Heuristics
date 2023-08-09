@@ -13,7 +13,7 @@ bert: https://drive.google.com/file/d/1aXrQ3vTegDDC4TCkI1iykk4LOykg7QLl/view?usp
 
 The experiments were carried out on windows 11, using python 3.9.13 (anaconda prompt)
 
-To replicate the experiments it's necessary to install anaconda prompt and have an nvidia gpu supporting CUDA
+To replicate the experiments it's recommendable to install anaconda prompt and have an nvidia gpu supporting CUDA
 
 ## Installing
 Steps are the following:
@@ -34,4 +34,16 @@ virtualenv venv
 then:
 ```
 venv\Scripts\activate
+```
+install pytorch and cuda with cuda
+```
+pip3 install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu117
+```
+install all packages required
+```
+pip install -r requirements.txt
+```
+then:
+```
+python -m spacy download en_core_web_sm
 ```
