@@ -77,28 +77,6 @@ def checkWordRepetead(word, string, cont):
     return index
 
 
-def computeStringMetricDiego(arrayDistance, indCitPositionDistance, indCitSuggested, cont, toPRintSplitted, tmpDifs,
-                             metric, newMetric):
-    for el in arrayDistance:
-        for elem in indCitPositionDistance:
-            dif = abs(el - elem)
-            tmpDifs.append(dif)
-        metric.append(min(tmpDifs))
-        tmpDifs = []
-    for i in metric:
-        if i == 0:
-            newMetric.append(2)
-        elif i <= 3:
-            newMetric.append(1)
-        else:
-            newMetric.append(0)
-    for j in indCitSuggested:
-        toPrintSplitted[j] = '[CIT]' + '-' + str(newMetric[cont])
-        cont = cont + 1
-    strMetric = ' '.join(toPrintSplitted)
-    return strMetric
-
-
 def concateInput(tmp, tokenizer, inputs):
     strInput = (tokenizer.decode(inputs[0])) + tmp
     newInput = tokenizer(strInput, return_tensors="pt").input_ids.to("cuda")
