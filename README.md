@@ -35,7 +35,7 @@ then:
 ```
 venv\Scripts\activate
 ```
-install pytorch and cuda with cuda
+install pytorch with cuda
 ```
 pip3 install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu117
 ```
