@@ -95,7 +95,7 @@ then run:
 
 ```
 python evaluation.py "..\GenApproach\prediction.txt"
-
+```
 or for the NER approach:
 ```
 python evaluation.py "..\NER\predictionNER.txt" or "..\NER\predictionNERHeur.txt"
