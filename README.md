@@ -47,3 +47,26 @@ then:
 ```
 python -m spacy download en_core_web_sm
 ```
+## Running the tests
+to run the experiments for the generative approach move to the folder GenApproach:
+```
+cd GenApproach
+```
+then if you want to use the gpt2 model trained on arxiv dataset and run the experiments with heuristics:
+```
+python citationPrediction.py "lysandre/arxiv-nlp"
+```
+then if you want to use the gpt2 model trained by us on s2orc  dataset and run the experiments with heuristics:
+
+```
+python citationPrediction.py "path\where\you\downloaded\gpt2"
+```
+instead if you want to use the gpt2 model trained on arxiv dataset and run the experiments without heuristics:
+```
+python citationPredictionNoHeur.py "lysandre/arxiv-nlp"
+```
+instead if you want to use the gpt2 model trained by us on s2orc  dataset and run the experiments without heuristics:
+
+```
+python citationPredictionNoHeur.py "path\where\you\downloaded\gpt2"
+```
