@@ -77,7 +77,7 @@ cd NER
 ```
 then if you want to use the bert model fine tuned by us on s2orc dataset and run the experiments without heuristics:
 ```
-python NER_test.py "path\where\you\downloaded\bert"
+python NER_test.py "path\where\you\downloaded\bert\checkpoint-55500"
 ```
 this script gives in output a txt file "predictionNer.txt" with the sentences with the placeholder where the trasnformer suggested the citation
 
