@@ -32,4 +32,6 @@ Open the anaconda prompt and create the virtual environment:
 virtualenv venv
 ```
 then:
+```
 venv\Scripts\activate
+```
