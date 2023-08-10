@@ -7,4 +7,5 @@ torch==1.13.1
 transformers==4.28.0
 datasets==2.11.0
 seqeval==1.2.2
+tokenizer==0.11
 
