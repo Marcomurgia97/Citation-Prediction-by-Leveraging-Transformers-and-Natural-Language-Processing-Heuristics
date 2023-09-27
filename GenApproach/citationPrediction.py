@@ -498,6 +498,8 @@ for line in sentences.readlines():
                 toFindPrecIdx = stringMetric.split().index(tmpToPrint.split()[idx - 1])
                 while toFindIdx < toFindPrecIdx:
                     toFindIdx = stringMetric.split().index(toFind, toFindIdx + 1)
+                if stringMetric.split().index('[citationHere]') == toFindIdx-1:
+                    toFindIdx = toFindIdx - 1
                 indexProb = array.index(toFindIdx)
                 del arrayProb[indexProb]
 
