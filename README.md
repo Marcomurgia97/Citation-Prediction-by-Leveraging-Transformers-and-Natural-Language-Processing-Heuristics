@@ -1,106 +1,158 @@
-# Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics
+# Citation Prediction using Transformers and Natural Language Processing Heuristics
 
-This repo contains code for automating the citation prediction problem using transformers and related experiments for performances evaluation described in the paper [Citation prediction by leveraging transformers and natural language processing heuristics](https://www.sciencedirect.com/science/article/pii/S0306457323003205)
+This repository contains the code for automating the citation prediction problem using Transformer models and related experiments for performance evaluation, as described in our paper:
+
+➡️ **[Citation prediction by leveraging transformers and natural language processing heuristics](https://www.sciencedirect.com/science/article/pii/S0306457323003205)** ⬅️
+
+We explore two main approaches: a **Generative** one based on GPT-2 and a **Named Entity Recognition (NER)** one using BERT, both enhanced with Natural Language Processing heuristics.
 
 ## Prerequisites
-You can download the models we use and fine-tuned from the following links
 
-GPT2: https://drive.google.com/file/d/1rwYv-hbjLwicLhi3Os4-TQUu5dOaLIdX/view?usp=drive_link
+Before you begin, ensure you have the following:
 
-BERT: https://drive.google.com/file/d/1aXrQ3vTegDDC4TCkI1iykk4LOykg7QLl/view?usp=drive_link
+1.  **Pre-trained Models:** Download the models we used and fine-tuned:
+    *   **GPT-2 (Fine-tuned on S2ORC):** [Download from Google Drive](https://drive.google.com/file/d/1rwYv-hbjLwicLhi3Os4-TQUu5dOaLIdX/view?usp=drive_link)
+    *   **BERT (Fine-tuned on S2ORC):** [Download from Google Drive](https://drive.google.com/file/d/1aXrQ3vTegDDC4TCkI1iykk4LOykg7QLl/view?usp=drive_link)
+2.  **Environment:**
+    *   **Python 3.9.13** (we recommend using [Anaconda](https://www.anaconda.com/products/distribution))
+    *   **OS:** Experiments were conducted on Windows 11.
+    *   **GPU:** An NVIDIA GPU supporting CUDA is **highly recommended** for reasonable execution times.
 
-The experiments were carried out on windows 11, using python 3.9.13 (anaconda prompt)
+## Installation
 
-To replicate the experiments it's recommendable to install anaconda prompt and have an nvidia gpu supporting CUDA
+Follow these steps to set up your environment:
 
-## Installing
-Steps are the following:
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Marcomurgia97/Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics.git
+    ```
+2.  **Navigate into the directory:**
+    ```bash
+    cd Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics
+    ```
+3.  **Create and activate a virtual environment** (using Anaconda Prompt or your preferred terminal):
+    ```bash
+    # Create the environment (e.g., named 'citepred')
+    conda create -n citepred python=3.9.13
+    # Activate the environment
+    conda activate citepred
+    ```
+    *(Alternatively, using `virtualenv`)*
+    ```bash
+    # python -m venv venv  # Or: virtualenv venv
+    # venv\Scripts\activate  # On Windows
+    # source venv/bin/activate # On Linux/macOS
+    ```
 
-Clone the repo:
-```
-git clone https://github.com/Marcomurgia97/Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics.git
-```
+4.  **Install PyTorch with CUDA support:**
+    *(Ensure the CUDA version (`cu117` here) matches your system's CUDA installation)*
+    ```bash
+    pip3 install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu117
+    ```
+5.  **Install all required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+6.  **Download the SpaCy language model:**
+    ```bash
+    python -m spacy download en_core_web_sm
+    ```
 
-move into the repo:
-```
-cd Citation-Prediction-by-Leveraging-Transformers-and-Natural-Language-Processing-Heuristics
-```
-Open the anaconda prompt and create the virtual environment:
-```
-virtualenv venv
-```
-then:
-```
-venv\Scripts\activate
-```
-install pytorch with cuda
-```
-pip3 install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu117
-```
-install all packages required
-```
-pip install -r requirements.txt
-```
-then:
-```
-python -m spacy download en_core_web_sm
-```
-## Running the tests
-to run the experiments for the generative approach move to the folder GenApproach:
-```
-cd GenApproach
-```
-then if you want to use the gpt2 model trained on arxiv dataset and run the experiments with heuristics:
-```
-python citationPrediction.py "lysandre/arxiv-nlp"
-```
-then if you want to use the gpt2 model trained by us on s2orc  dataset and run the experiments with heuristics:
+## Running the Experiments
 
-```
-python citationPrediction.py "path\where\you\downloaded\gpt2"
-```
-instead if you want to use the gpt2 model trained on arxiv dataset and run the experiments without heuristics:
-```
-python citationPredictionNoHeur.py "lysandre/arxiv-nlp"
-```
-instead if you want to use the gpt2 model trained by us on s2orc dataset and run the experiments without heuristics:
+You are now ready to run the experiments. The results (prediction `.txt` files) will be saved in their respective approach folders (`GenApproach` or `NER`). The placeholder `[CITE]` indicates where the model suggests a citation is needed.
 
-```
-python citationPredictionNoHeur.py "path\where\you\downloaded\gpt2"
-```
+---
 
-these scripts give in output a txt file "prediction.txt" with the sentences with the placeholder where the transformer suggested the citation
+### Generative Approach (GPT-2)
 
-to run the experiments for the NER approach move to the folder NER:
-```
-cd NER
-```
-then if you want to use the bert model fine tuned by us on s2orc dataset and run the experiments without heuristics:
-```
-python NER_test.py "path\where\you\downloaded\bert\checkpoint-55500"
-```
-this script gives in output a txt file "predictionNer.txt" with the sentences with the placeholder where the trasnformer suggested the citation
+1.  **Navigate to the folder:**
+    ```bash
+    cd GenApproach
+    ```
+2.  **Run the experiments:**
 
-then if you want to apply the heuristics:
-```
-python NERHeur.py "predictionNer.txt"
-```
-this script gives in output a txt file "predictionNerHeur.txt"
+    *   **WITH heuristics:**
+        *   Using the ArXiv pre-trained GPT-2 model:
+            ```bash
+            python citationPrediction.py "lysandre/arxiv-nlp"
+            ```
+        *   Using our S2ORC fine-tuned GPT-2 model:
+            ```bash
+            python citationPrediction.py "/path/where/you/downloaded/gpt2"
+            ```
+            *(Replace `/path/where/you/downloaded/gpt2` with the actual path)*
+    *   **WITHOUT heuristics:**
+        *   Using the ArXiv pre-trained GPT-2 model:
+            ```bash
+            python citationPredictionNoHeur.py "lysandre/arxiv-nlp"
+            ```
+        *   Using our S2ORC fine-tuned GPT-2 model:
+            ```bash
+            python citationPredictionNoHeur.py "/path/where/you/downloaded/gpt2"
+            ```
+            *(Replace `/path/where/you/downloaded/gpt2` with the actual path)*
 
-For the evaluation of the perfomances move in the folder evaluation
-```
-cd evaluation
-```
-then run:
+    *   **Output:** These scripts generate the `prediction.txt` file.
 
-```
-python evaluation.py "..\GenApproach\prediction.txt"
-```
-or for the NER approach:
-```
-python evaluation.py "..\NER\predictionNER.txt" or "..\NER\predictionNERHeur.txt"
+---
 
-```
+### NER Approach (BERT)
 
-For any problem or tips feel free to contact us on this mail address: m.murgia98@studenti.unica.it
+1.  **Navigate to the folder:**
+    ```bash
+    cd NER
+    ```
+    *(If you were in `GenApproach`, use `cd ../NER`)*
+2.  **Run the experiments:**
 
+    *   **NER Prediction (without heuristics):**
+        *   Using our S2ORC fine-tuned BERT model:
+            ```bash
+            python NER_test.py "/path/where/you/downloaded/bert/checkpoint-55500"
+            ```
+            *(Replace `/path/where/you/downloaded/bert/checkpoint-55500` with the actual path)*
+        *   **Output:** This script generates the `predictionNer.txt` file.
+
+    *   **(Optional) Apply heuristics:**
+        *   To apply heuristics to the NER results:
+            ```bash
+            python NERHeur.py "predictionNer.txt"
+            ```
+        *   **Output:** This script reads `predictionNer.txt` and generates `predictionNerHeur.txt`.
+
+---
+
+## Performance Evaluation
+
+To calculate performance metrics (Precision, Recall, F1-Score):
+
+1.  **Navigate to the folder:**
+    ```bash
+    cd evaluation
+    ```
+    *(If you were in `NER`, use `cd ../evaluation`)*
+2.  **Run the evaluation script**, specifying the prediction file to evaluate:
+
+    *   **For the Generative Approach:**
+        ```bash
+        python evaluation.py "../GenApproach/prediction.txt"
+        ```
+    *   **For the NER Approach:**
+        *   Without Heuristics:
+            ```bash
+            python evaluation.py "../NER/predictionNer.txt"
+            ```
+        *   With Heuristics:
+            ```bash
+            python evaluation.py "../NER/predictionNerHeur.txt"
+            ```
+
+## Contact and Issues
+
+If you have any questions, suggestions, or encounter problems, please feel free to:
+
+*   Open an **Issue** on this GitHub repository.
+*   Contact us via email: `m.murgia98@studenti.unica.it`
+
+Happy experimenting!
