@@ -154,5 +154,3 @@ If you have any questions, suggestions, or encounter problems, please feel free 
 
 *   Open an **Issue** on this GitHub repository.
 *   Contact us via email: `m.murgia98@studenti.unica.it`
-
-Happy experimenting!
