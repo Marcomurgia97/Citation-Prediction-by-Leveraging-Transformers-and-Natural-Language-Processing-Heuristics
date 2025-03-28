@@ -1,6 +1,6 @@
 # Citation Prediction using Transformers and Natural Language Processing Heuristics
 
-[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://python.org) <!-- Optional: Add badges like this -->
+[![Python Version](https://img.shields.io/badge/python-3.9.13-blue.svg)](https://python.org) <!-- Optional: Add badges like this -->
 
 This repository contains the code for automating the citation prediction problem using Transformer models and related experiments for performance evaluation, as described in our paper:
 
